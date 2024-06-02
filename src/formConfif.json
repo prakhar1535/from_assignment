@@ -1,0 +1,60 @@
+[
+  {
+    "id": "username",
+    "name": "username",
+    "type": "text",
+    "required": true,
+    "regex": "^[a-zA-Z0-9]{3,10}$",
+    "label": "Username"
+  },
+  {
+    "id": "password",
+    "name": "password",
+    "type": "password",
+    "required": true,
+    "regex": "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$",
+    "label": "Password"
+  },
+  {
+    "id": "gender",
+    "name": "gender",
+    "type": "radio",
+    "required": true,
+    "options": [
+      { "label": "Male", "value": "male" },
+      { "label": "Female", "value": "female" }
+    ],
+    "label": "Gender"
+  },
+  {
+    "id": "hobbies",
+    "name": "hobbies",
+    "type": "checkbox",
+    "required": false,
+    "options": [
+      { "label": "Reading", "value": "reading" },
+      { "label": "Traveling", "value": "traveling" }
+    ],
+    "label": "Hobbies"
+  },
+  {
+    "id": "country",
+    "name": "country",
+    "type": "select",
+    "required": true,
+    "multipleSelect": false,
+    "options": [
+      { "label": "USA", "value": "usa" },
+      { "label": "Canada", "value": "canada" }
+    ],
+    "label": "Country"
+  },
+  {
+    "id": "resume",
+    "name": "resume",
+    "type": "file",
+    "required": true,
+    "fileFormatSupported": [".pdf", ".doc"],
+    "label": "Resume"
+  }
+]
